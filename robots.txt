@@ -1,7 +1,10 @@
-# Group 1
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
-# Group 2
+# Allow all robots
 User-agent: *
 Allow: /
+Disallow: /assets/
+
+# Sitemap reference for search engines
+Sitemap: https://petrmikeska.cz/sitemap.xml
+
+# Crawl-delay to prevent server overload
+Crawl-delay: 1

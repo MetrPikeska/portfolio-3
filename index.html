@@ -16,29 +16,71 @@
   </script>
 
   <!-- Primary Meta Tags -->
-  <title>Petr Mikeska | Geoinformatik, GIS Analytik, Webové Mapové Aplikace</title>
-  <meta name="title" content="Petr Mikeska | Geoinformatik, GIS Analytik, Webové Mapové Aplikace" />
-  <meta name="description" content="Geoinformatika, GIS analýzy a vývoj webových mapových aplikací. Specializuji se na prostorové analýzy, PostGIS, webovou kartografii, computer vision a zpracování geodat." />
-  <meta name="keywords" content="geoinformatika, GIS analýzy, webové mapové aplikace, PostGIS, prostorové analýzy, webová kartografie, computer vision, Leaflet, Python GIS, SQL databáze, DEM, 3D modelování terénu, QGIS, ArcGIS, geoinformatik Olomouc, GIS specialista" />
-  <meta name="author" content="Bc. Petr Mikeska" />
-  <meta name="robots" content="index, follow" />
+  <title>Petr Mikeska | Geoinformatik, GIS Analytik, Vývoj Webových Mapových Aplikací</title>
+  <meta name="title" content="Petr Mikeska | Geoinformatik, GIS Analytik, Vývoj Webových Mapových Aplikací" />
+  <meta name="description" content="Geoinformatik se zaměřením na GIS analýzy, webové mapové aplikace, PostGIS, prostorové analýzy a computer vision. Vývoj geoprostorových nástrojů s Python, JavaScript a WebGIS technologiemi." />
+  <meta name="keywords" content="geoinformatika, GIS analytik, webové mapové aplikace, PostGIS, prostorové analýzy, webová kartografie, Leaflet, Python GIS, QGIS, ArcGIS, computer vision, OpenCV, dálkový průzkum, GeoServer, WMS, WFS, RestAPI geografická data" />
+  <meta name="author" content="Petr Mikeska" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://petrmikeska.cz/" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Petr Mikeska",
+    "url": "https://petrmikeska.cz",
+    "image": "https://petrmikeska.cz/assets/img/passport-new.jpg",
+    "description": "Geoinformatik, GIS analytik a vývojář webových mapových aplikací se zaměřením na prostorové analýzy, PostGIS a computer vision.",
+    "jobTitle": ["GIS Analytik", "Geoinformatik", "Webový vývojář"],
+    "knowsAbout": ["GIS", "Geoinformatika", "WebGIS", "PostGIS", "Python", "JavaScript", "Prostorové analýzy", "Dálkový průzkum", "Computer Vision", "Webové mapové aplikace"],
+    "sameAs": [
+      "https://github.com/metrpikeska",
+      "https://petrmikeska.cz"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Portfolio",
+      "item": "https://petrmikeska.cz"
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "O mně",
+      "item": "https://petrmikeska.cz#about"
+    }, {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Projekty",
+      "item": "https://petrmikeska.cz#projects"
+    }]
+  }
+  </script>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://petrmikeska.cz/" />
-  <meta property="og:title" content="Petr Mikeska | Geoinformatik, GIS Analytik, Webové Mapové Aplikace" />
-  <meta property="og:description" content="Geoinformatika, GIS analýzy a vývoj webových mapových aplikací. Specializuji se na prostorové analýzy, PostGIS, webovou kartografii a zpracování geodat." />
-  <meta property="og:image" content="https://petrmikeska.cz/og-image.jpg" />
+  <meta property="og:title" content="Petr Mikeska | Geoinformatik a GIS Analytik" />
+  <meta property="og:description" content="Geoinformatik se zaměřením na GIS analýzy, webové mapové aplikace a computer vision. Specialista na PostGIS, Python GIS a vývoj geoprostorových nástrojů." />
+  <meta property="og:image" content="https://petrmikeska.cz/assets/img/passport-new.jpg" />
   <meta property="og:locale" content="cs_CZ" />
-  <meta property="og:site_name" content="Petr Mikeska - Portfolio" />
+  <meta property="og:site_name" content="Petr Mikeska - Geoinformatik Portfolio" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://petrmikeska.cz/" />
-  <meta property="twitter:title" content="Petr Mikeska | Geoinformatik, GIS Analytik, Webové Mapové Aplikace" />
-  <meta property="twitter:description" content="Geoinformatika, GIS analýzy a vývoj webových mapových aplikací. Specializuji se na prostorové analýzy, PostGIS, webovou kartografii a zpracování geodat." />
-  <meta property="twitter:image" content="https://petrmikeska.cz/og-image.jpg" />
+  <meta property="twitter:title" content="Petr Mikeska | Geoinformatik a GIS Analytik" />
+  <meta property="twitter:description" content="Geoinformatik se zaměřením na GIS analýzy, webové mapové aplikace a computer vision. Specialista na PostGIS, Python GIS a vývoj geoprostorových nástrojů." />
+  <meta property="twitter:image" content="https://petrmikeska.cz/assets/img/passport-new.jpg" />
 
   <!-- Materialize - Compiled and minified CSS-->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
@@ -193,9 +235,10 @@
           <div class="col s12 m6">
             <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
               <div class="caption">
+                <h1 style="display: none;">Petr Mikeska - Geoinformatik a GIS Analytik</h1>
                 <h2><span class="teal">Petr Mikeska</span></h2>
                 <h5 style="color:#fff"><span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-                <h5>GISák s vášní pro prostorová data, webové mapové aplikace a transformaci složitých geografických dat na praktické výstupy.</h5>
+                <h5 style="color: #fff; font-weight: 300; line-height: 1.6;">GIS Analytik | Geoinformatik | Vývojář WebGIS aplikací se zaměřením na prostorové analýzy, PostGIS a computer vision</h5>
               </div>
               <div class="social">
                 <a href="#contact" target="_blank">
@@ -335,7 +378,7 @@
                 </p>
               </div>
             </div>
-            <div class="role brown-text text-darken-2">Analytik GIS <small>(Stáž)</small></div>
+            <div class="role brown-text text-darken-2">Analytik GIS <small>(Školní stáž)</small></div>
             <ul>
               <li>Zpracování satelitních snímků a rastrových dat v prostředí GIS</li>
               <li>Analýza obrazových dat a jejich následná interpretace</li>
