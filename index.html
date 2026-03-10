@@ -74,10 +74,6 @@
     <ul class="side-nav fixed section table-of-contents">
 
       <li class="logo">
-        <a id="logo-container" aria-label="Přejít na začátek stránky" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/passport-new.jpg" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
       </li>
 
       <li class="bold">
@@ -193,30 +189,35 @@
     <section id="intro" class="section scrollspy full-height">
       <div class="overlay"></div>
       <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2><span class="teal">Petr Mikeska.</span></h2>
-              <h5 style="color:#fff"><span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <h5>GIS analytik a geoinformatik s vášní pro prostorová data, webové mapové aplikace a transformaci složitých geografických dat na praktické výstupy.</h5>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+              <div class="caption">
+                <h2><span class="teal">Petr Mikeska.</span></h2>
+                <h5 style="color:#fff"><span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+                <h5>GIS analytik a geoinformatik s vášní pro prostorová data, webové mapové aplikace a transformaci složitých geografických dat na praktické výstupy.</h5>
+              </div>
+              <div class="social">
+                <a href="#contact" target="_blank">
+                  <button class="icon-btn linkedin">
+                    <i class="fa fa-linkedin"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/metrpikeska" target="_blank">
+                  <button class="icon-btn github">
+                    <i class="fa fa-github"></i>
+                  </button>
+                </a>
+              </div>
+              <div class='buttons'>
+                <a href="#about" class="readme">Více</a>
+                <a href="#contact" class="contactme">Kontakt</a>
+              </div>
             </div>
-            <div class="social">
-              <a href="#contact" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/metrpikeska" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-
-
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Více</a>
-              <a href="#contact" class="contactme">Kontakt</a>
+          </div>
+          <div class="col s12 m6">
+            <div style="display: flex; align-items: center; justify-content: center; height: 100%; margin-top: 50px;">
+              <img src="/assets/img/passport-new.jpg" alt="Petr Mikeska" class="responsive-img intro-image" />
             </div>
           </div>
         </div>
@@ -585,7 +586,9 @@
                 <img alt="CSS" src="/assets/img/css3-300x300.jpg" class="responsive-img" /><p>CSS</p>
               </div>
           
-              <div class="col s6 m-5"><p><b>REST API</b></p></div>
+              <div class="col s6 m-5">
+                <img alt="REST API" src="/assets/img/7955-rest-api.png" class="responsive-img" /><p>REST API</p>
+              </div>
             </div>
           </div>
         </div>
@@ -614,8 +617,12 @@
           <div class="card-content">
             <h4 class="brown-text light">Geospatial &amp; Data Libraries</h4>
             <div class="row text-center">
-              <div class="col s6 m-5"><p><b>GeoPandas</b></p></div>
-              <div class="col s6 m-5"><p><b>Shapely</b></p></div>
+              <div class="col s6 m-5">
+                <img alt="GeoPandas" src="/assets/img/geopandas.png" class="responsive-img" /><p>GeoPandas</p>
+              </div>
+              <div class="col s6 m-5">
+                <img alt="Shapely" src="/assets/img/shapely.png" class="responsive-img" /><p>Shapely</p>
+              </div>
               <div class="col s6 m-5">
                 <img alt="NumPy" src="/assets/img/numpy-logo-1-500x500.jpg" class="responsive-img" /><p>NumPy</p>
               </div>
@@ -662,7 +669,7 @@
               <div class="col s6 m-5">
                 <img alt="PyTorch" src="/assets/img/pytorch-logo.png" class="responsive-img" /><p>PyTorch</p>
               </div>
-              <div class="col s6 m-5"><p><b>Video Processing</b></p></div>
+              
             </div>
           </div>
         </div>
