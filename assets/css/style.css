@@ -20,6 +20,21 @@
   right: 0;
 }
 
+/* Grid column for max 5 items per row */
+.col.m-5 {
+  width: 20% !important;
+}
+@media only screen and (max-width: 992px) {
+  .col.m-5 {
+    width: 33.3333% !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .col.m-5 {
+    width: 50% !important;
+  }
+}
+
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 .social {
   margin: 0 auto;
