@@ -16,12 +16,14 @@
   </script>
 
   <!-- Primary Meta Tags -->
-  <title>Petr Mikeska | Geoinformatik, GIS Analytik, Vývoj Webových Mapových Aplikací</title>
-  <meta name="title" content="Petr Mikeska | Geoinformatik, GIS Analytik, Vývoj Webových Mapových Aplikací" />
-  <meta name="description" content="Geoinformatik se zaměřením na GIS analýzy, webové mapové aplikace, PostGIS, prostorové analýzy a computer vision. Vývoj geoprostorových nástrojů s Python, JavaScript a WebGIS technologiemi." />
-  <meta name="keywords" content="geoinformatika, GIS analytik, webové mapové aplikace, PostGIS, prostorové analýzy, webová kartografie, Leaflet, Python GIS, QGIS, ArcGIS, computer vision, OpenCV, dálkový průzkum, GeoServer, WMS, WFS, RestAPI geografická data" />
+  <title>Petr Mikeska – GIS Analytik &amp; Geoinformatik | petrmikeska.cz</title>
+  <meta name="title" content="Petr Mikeska – GIS Analytik &amp; Geoinformatik | petrmikeska.cz" />
+  <meta name="description" content="GIS analytik – student geoinformatiky UP Olomouc. Prostorové analýzy, webové GIS aplikace, Python, PostGIS, computer vision. Portfolio projektů a nabídka služeb." />
+  <meta name="keywords" content="geoinformatika, GIS analytik, webové mapové aplikace, PostGIS, prostorové analýzy, webová kartografie, Leaflet, Python GIS, QGIS, ArcGIS, computer vision, OpenCV, YOLOv8, dálkový průzkum, GeoServer, WMS, WFS, REST API, prostorove databáze, GIS služby, geospatial, spatial analysis, Olomouc" />
   <meta name="author" content="Petr Mikeska" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="geo.region" content="CZ-71" />
+  <meta name="geo.placename" content="Olomouc, Czech Republic" />
   <link rel="canonical" href="https://petrmikeska.cz/" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
@@ -30,14 +32,31 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://petrmikeska.cz/#person",
     "name": "Petr Mikeska",
     "url": "https://petrmikeska.cz",
     "image": "https://petrmikeska.cz/assets/img/passport.webp",
-    "description": "Geoinformatik, GIS analytik a vývojář webových mapových aplikací se zaměřením na prostorové analýzy, PostGIS a computer vision.",
-    "jobTitle": ["GIS Analytik", "Geoinformatik", "Webový vývojář"],
-    "knowsAbout": ["GIS", "Geoinformatika", "WebGIS", "PostGIS", "Python", "JavaScript", "Prostorové analýzy", "Dálkový průzkum", "Computer Vision", "Webové mapové aplikace"],
+    "description": "GIS analytik a student geoinformatiky se zaměřením na prostorové analýzy, webové mapové aplikace, PostGIS a computer vision.",
+    "jobTitle": "GIS Analytik",
+    "nationality": {
+      "@type": "Country",
+      "name": "Czech Republic"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CZ",
+      "addressRegion": "Olomoucký kraj",
+      "addressLocality": "Olomouc"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Univerzita Palackého v Olomouci",
+      "url": "https://www.upol.cz"
+    },
+    "knowsAbout": ["GIS", "Geoinformatika", "WebGIS", "PostGIS", "Python", "JavaScript", "Prostorové analýzy", "Dálkový průzkum", "Computer Vision", "YOLOv8", "Leaflet", "QGIS", "ArcGIS Pro", "Kartografie", "REST API"],
     "sameAs": [
-      "https://github.com/metrpikeska",
+      "https://github.com/MetrPikeska",
+      "https://www.linkedin.com/in/petr-mikeska-b25669262/",
       "https://petrmikeska.cz"
     ]
   }
@@ -60,8 +79,38 @@
     }, {
       "@type": "ListItem",
       "position": 3,
+      "name": "Vzdělání",
+      "item": "https://petrmikeska.cz#education"
+    }, {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Praxe",
+      "item": "https://petrmikeska.cz#experience"
+    }, {
+      "@type": "ListItem",
+      "position": 5,
       "name": "Projekty",
       "item": "https://petrmikeska.cz#projects"
+    }, {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Dovednosti",
+      "item": "https://petrmikeska.cz#skills"
+    }, {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Certifikace",
+      "item": "https://petrmikeska.cz#certifications"
+    }, {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Služby",
+      "item": "https://petrmikeska.cz#services"
+    }, {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Kontakt",
+      "item": "https://petrmikeska.cz#contact"
     }]
   }
   </script>
@@ -69,17 +118,20 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://petrmikeska.cz/" />
-  <meta property="og:title" content="Petr Mikeska | Geoinformatik a GIS Analytik" />
-  <meta property="og:description" content="Geoinformatik se zaměřením na GIS analýzy, webové mapové aplikace a computer vision. Specialista na PostGIS, Python GIS a vývoj geoprostorových nástrojů." />
+  <meta property="og:title" content="Petr Mikeska – GIS Analytik &amp; Geoinformatik" />
+  <meta property="og:description" content="GIS analytik – student geoinformatiky UP Olomouc. Prostorové analýzy, webové GIS aplikace, Python, PostGIS, computer vision. Portfolio projektů a nabídka služeb." />
   <meta property="og:image" content="https://petrmikeska.cz/assets/img/passport.webp" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="554" />
+  <meta property="og:image:alt" content="Petr Mikeska – GIS Analytik" />
   <meta property="og:locale" content="cs_CZ" />
   <meta property="og:site_name" content="Petr Mikeska - Geoinformatik Portfolio" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://petrmikeska.cz/" />
-  <meta property="twitter:title" content="Petr Mikeska | Geoinformatik a GIS Analytik" />
-  <meta property="twitter:description" content="Geoinformatik se zaměřením na GIS analýzy, webové mapové aplikace a computer vision. Specialista na PostGIS, Python GIS a vývoj geoprostorových nástrojů." />
+  <meta property="twitter:title" content="Petr Mikeska – GIS Analytik &amp; Geoinformatik" />
+  <meta property="twitter:description" content="GIS analytik – student geoinformatiky UP Olomouc. Prostorové analýzy, webové GIS aplikace, Python, PostGIS, computer vision. Portfolio projektů a nabídka služeb." />
   <meta property="twitter:image" content="https://petrmikeska.cz/assets/img/passport.webp" />
 
   <!-- Preconnect for third-party origins -->
@@ -301,9 +353,6 @@
            
         <p>
           Jsem student geoinformatiky a GIS analytik se zaměřením na prostorové analýzy, webovou kartografii a práci s geoprostorovými daty. Aktuálně studuji navazující magisterský program Geoinformatika a kartografie na Univerzitě Palackého v Olomouci. Zaměřuji se na propojení GIS technologií, prostorových databází a programování pro tvorbu nástrojů pro analýzu a vizualizaci geografických dat. Pracuji především s technologiemi QGIS, ArcGIS Pro, PostGIS a Python a vytvářím mapové aplikace a analytické nástroje využívající webové technologie jako Leaflet, GeoJSON a mapové služby WMS/WFS.
-        </p>
-        <p>
-         
         </p>
         <p>
           Zajímám se také o dálkový průzkum Země, prostorovou analytiku, automatizaci geodatových workflow a využití computer vision v GIS, například při zpracování obrazových a video dat. Hledám příležitosti podílet se na projektech zaměřených na environmentální monitoring, prostorové analýzy a vývoj geoprostorových aplikací.

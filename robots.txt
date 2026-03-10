@@ -1,7 +1,6 @@
-# Allow all robots
+# Allow all robots including image crawlers
 User-agent: *
 Allow: /
-Disallow: /assets/
 
 # Sitemap reference for search engines
 Sitemap: https://petrmikeska.cz/sitemap.xml
