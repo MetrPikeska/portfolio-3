@@ -50,7 +50,7 @@
   overflow: hidden;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+/* Google Font loaded via <link> in HTML with font-display:swap (see index.html) */
 .social {
   margin: 0 auto;
   width: auto;
@@ -822,4 +822,10 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+}
+
+/* Performance: defer rendering of off-screen sections */
+#education, #experience, #projects, #skills, #certifications, #services, #contact {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
 }
