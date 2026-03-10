@@ -837,3 +837,143 @@ small {
   content-visibility: auto;
   contain-intrinsic-size: 0 500px;
 }
+
+/* Contact section */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 20px 0 40px;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-field label {
+  font-size: 14px;
+  color: #444;
+  font-weight: 500;
+}
+
+.contact-field input,
+.contact-field textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+  resize: vertical;
+  box-shadow: none;
+  width: 100%;
+  box-sizing: border-box;
+  /* override Materialize */
+  border-bottom: 1px solid #ddd !important;
+  height: auto !important;
+  margin: 0 !important;
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  border-color: #009688 !important;
+  box-shadow: none !important;
+}
+
+.contact-submit {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+
+.contact-submit:hover {
+  background: #009688;
+}
+
+.contact-info-card {
+  background: #f5f5f5;
+  border-radius: 6px;
+  padding: 28px 28px 24px;
+}
+
+.contact-info-title {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 8px;
+}
+
+.contact-info-sub {
+  font-size: 13px;
+  font-style: italic;
+  color: #666;
+  margin: 0 0 20px;
+}
+
+.contact-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-info-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 14px;
+  font-style: italic;
+  color: #444;
+}
+
+.contact-info-icon {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  flex-shrink: 0;
+  color: #555;
+  font-size: 15px;
+}
+
+.contact-info-list a {
+  color: #444;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.contact-info-list a:hover {
+  color: #009688;
+}

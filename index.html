@@ -1062,34 +1062,57 @@
     </section>
 
     <!-- Ninth Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
+    <section id="contact" class="section scrollspy">
       <h3 class="page-title white-text teal">Kontakt</h3>
       <div class="container">
-        <p>
-          <a aria-label="Zavolat Petrovi" data-position="top" data-tooltip="Zavolat Petrovi"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-              aria-label="Zavolat Petrovi">+420 773 426 330</a></a>
-        </p>
-        <p>
-          <a aria-label="Napsat Petrovi e-mail" href="mailto:piter.mikeska@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Napsat e-mail" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Napsat Petrovi e-mail" href="mailto:piter.mikeska@gmail.com"
-              class="hoverline">piter.mikeska@gmail.com</a></a>
-        </p>
-        <p>
-          <a aria-label="Zobrazit Petra na GitHubu" href="https://github.com/metrpikeska" target="_blank"
-            data-position="top" data-tooltip="Zobrazit na GitHubu"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Petr na GitHubu" href="https://github.com/metrpikeska" class="hoverline"
-              target="_blank">github.com/metrpikeska</a></a>
-        </p>
-        <p>
-          <a aria-label="Navštívit Petrův web" href="https://petrmikeska.cz" target="_blank"
-            data-position="top" data-tooltip="Navštívit web"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-globe"></i><a aria-label="Petrův web" href="https://petrmikeska.cz"
-              class="hoverline" target="_blank">petrmikeska.cz</a></a>
-        </p>
+        <div class="contact-grid">
+
+          <!-- Contact form -->
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/xpwzgvnq" method="POST">
+            <div class="contact-field">
+              <label for="contact-name">Jméno</label>
+              <input type="text" id="contact-name" name="name" placeholder="Vaše jméno" required />
+            </div>
+            <div class="contact-field">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" placeholder="vas.email@priklad.cz" required />
+            </div>
+            <div class="contact-field">
+              <label for="contact-message">Zpráva</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Vaše zpráva..." required></textarea>
+            </div>
+            <button type="submit" class="contact-submit">Odeslat zprávu</button>
+          </form>
+
+          <!-- Contact info card -->
+          <div class="contact-info-card">
+            <p class="contact-info-title">Kontaktujte mě</p>
+            <p class="contact-info-sub">Pokud máte zájem o spolupráci, neváhejte mě kontaktovat.</p>
+            <ul class="contact-info-list">
+              <li>
+                <span class="contact-info-icon"><i class="fa fa-envelope"></i></span>
+                <a href="mailto:piter.mikeska@gmail.com">piter.mikeska@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-info-icon"><i class="fa fa-phone"></i></span>
+                <span>+420 773 426 330</span>
+              </li>
+              <li>
+                <span class="contact-info-icon"><i class="fa fa-linkedin"></i></span>
+                <a href="https://www.linkedin.com/in/petr-mikeska-b25669262/" target="_blank">LinkedIn</a>
+              </li>
+              <li>
+                <span class="contact-info-icon"><i class="fa fa-github"></i></span>
+                <a href="https://github.com/MetrPikeska" target="_blank">GitHub</a>
+              </li>
+              <li>
+                <span class="contact-info-icon"><i class="fa fa-globe"></i></span>
+                <a href="https://petrmikeska.cz" target="_blank">petrmikeska.cz</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
       </div>
     </section>
   </main>
