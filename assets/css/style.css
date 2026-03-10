@@ -132,6 +132,14 @@
   line-height: 1.3;
 }
 
+.project-card-tagline {
+  font-size: 12px;
+  font-style: italic;
+  color: #777;
+  margin: -4px 0 10px 0;
+  line-height: 1.4;
+}
+
 .project-card-desc {
   font-size: 13px;
   color: #555;
