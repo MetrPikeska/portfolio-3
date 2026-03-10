@@ -18,7 +18,7 @@ jobs:
           server: 383750.w50.wedos.net
           username: w383750_main
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /www/
+          server-dir: /
           exclude: |
             **/.git*
             **/.git*/**
