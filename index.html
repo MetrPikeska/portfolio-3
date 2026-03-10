@@ -1,18 +1,44 @@
-<!-- <!DOCTYPE html> -->
-<html lang="en">
+<!DOCTYPE html>
+<html lang="cs">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
-  <!-- End Google Tag Manager -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMX8ZPEHYK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PMX8ZPEHYK');
+  </script>
+
+  <!-- Primary Meta Tags -->
+  <title>Petr Mikeska | Geoinformatik, GIS Analytik, Webové Mapové Aplikace</title>
+  <meta name="title" content="Petr Mikeska | Geoinformatik, GIS Analytik, Webové Mapové Aplikace" />
+  <meta name="description" content="Geoinformatika, GIS analýzy a vývoj webových mapových aplikací. Specializuji se na prostorové analýzy, PostGIS, webovou kartografii, computer vision a zpracování geodat." />
+  <meta name="keywords" content="geoinformatika, GIS analýzy, webové mapové aplikace, PostGIS, prostorové analýzy, webová kartografie, computer vision, Leaflet, Python GIS, SQL databáze, DEM, 3D modelování terénu, QGIS, ArcGIS, geoinformatik Olomouc, GIS specialista" />
+  <meta name="author" content="Bc. Petr Mikeska" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://petrmikeska.cz/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://petrmikeska.cz/" />
+  <meta property="og:title" content="Petr Mikeska | Geoinformatik, GIS Analytik, Webové Mapové Aplikace" />
+  <meta property="og:description" content="Geoinformatika, GIS analýzy a vývoj webových mapových aplikací. Specializuji se na prostorové analýzy, PostGIS, webovou kartografii a zpracování geodat." />
+  <meta property="og:image" content="https://petrmikeska.cz/og-image.jpg" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta property="og:site_name" content="Petr Mikeska - Portfolio" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://petrmikeska.cz/" />
+  <meta property="twitter:title" content="Petr Mikeska | Geoinformatik, GIS Analytik, Webové Mapové Aplikace" />
+  <meta property="twitter:description" content="Geoinformatika, GIS analýzy a vývoj webových mapových aplikací. Specializuji se na prostorové analýzy, PostGIS, webovou kartografii a zpracování geodat." />
+  <meta property="twitter:image" content="https://petrmikeska.cz/og-image.jpg" />
 
   <!-- Materialize - Compiled and minified CSS-->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
@@ -20,35 +46,7 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <!-- Custom Styles-->
   <link rel="stylesheet" href="/assets/css/style.css" />
-  <title>Petr Mikeska | GIS Analyst</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-126939217-2');
-  </script>
-
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Petr Mikeska | GIS Analyst" />
-  <meta property="og:description" content="GIS Analyst & Geoinformatics Specialist" />
-  <meta property="og:url" content="https://petrmikeska.cz" />
-  <meta property="og:site_name" content="Petr Mikeska | GIS Analyst" />
-  <meta property="article:publisher" content="https://petrmikeska.cz" />
-  <meta property="og:image" content="https://petrmikeska.cz/preview.jpg" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@petrmikeska" />
-  <meta name="twitter:title" content="GIS Analyst | Geoinformatics" />
-  <meta name="twitter:description" content="GIS analyst specializing in spatial analysis and web mapping" />
-  <meta name="twitter:url" content="https://petrmikeska.cz" />
-  <meta name="author" content="Petr Mikeska" />
-  <meta name="description" content="GIS analyst and geoinformatics specialist with expertise in spatial analysis, web mapping, and environmental data" />
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
@@ -66,16 +64,9 @@
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
-  <meta name="robots" content="index, follow" />
-  <!-- Google Site Verification for indexing -->
-  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
   
   <!-- Navigation Menu-->
   <!-- Nav class 1 -->
