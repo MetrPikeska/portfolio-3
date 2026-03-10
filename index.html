@@ -351,14 +351,7 @@
     <section id="about" class="section scrollspy">
       <h3 class="page-title white-text teal">O mně</h3>
       <div class="container flow-text">
-           
-        <p>
-          Jsem student geoinformatiky a GIS analytik se zaměřením na prostorové analýzy, webovou kartografii a práci s geoprostorovými daty. Aktuálně studuji navazující magisterský program Geoinformatika a kartografie na Univerzitě Palackého v Olomouci. Zaměřuji se na propojení GIS technologií, prostorových databází a programování pro tvorbu nástrojů pro analýzu a vizualizaci geografických dat. Pracuji především s technologiemi QGIS, ArcGIS Pro, PostGIS a Python a vytvářím mapové aplikace a analytické nástroje využívající webové technologie jako Leaflet, GeoJSON a mapové služby WMS/WFS.
-        </p>
-        <p>
-          Zajímám se také o dálkový průzkum Země, prostorovou analytiku, automatizaci geodatových workflow a využití computer vision v GIS, například při zpracování obrazových a video dat. Hledám příležitosti podílet se na projektech zaměřených na environmentální monitoring, prostorové analýzy a vývoj geoprostorových aplikací.
-        </p>
-     
+        <span class="typing-about"></span>
       </div>
     </section>
 
@@ -676,6 +669,9 @@
                 <span class="tech-tag">Analytické mapy</span>
                 <span class="tech-tag">Typizace</span>
               </div>
+              <a class="project-github-link" href="https://petrmikeska.cz/sykar2026_kapitola_Mikeska.pdf" target="_blank" aria-label="Zobrazit PDF publikaci">
+                <i class="fa fa-file-pdf-o"></i> PDF
+              </a>
             </div>
           </div>
 
@@ -1123,11 +1119,25 @@
   <script defer src="assets/vendor/typed.js/typed.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var typed = new Typed('.typing',{
+      var typed = new Typed('.typing', {
         strings: ["Prostorové analýzy", "Programování", "Prostorové databáze", "Computer Vision"],
         loop: true,
         typeSpeed: 80,
         backSpeed: 40
+      });
+
+      var typedAbout = new Typed('.typing-about', {
+        strings: [
+          "Jsem student geoinformatiky a GIS analytik se zaměřením na prostorové analýzy, webovou kartografii a práci s geoprostorovými daty. Aktuálně studuji navazující magisterský program Geoinformatika a kartografie na Univerzitě Palackého v Olomouci. Zaměřuji se na propojení GIS technologií, prostorových databází a programování pro tvorbu nástrojů pro analýzu a vizualizaci geografických dat. Pracuji především s technologiemi QGIS, ArcGIS Pro, PostGIS a Python a vytvářím mapové aplikace a analytické nástroje využívající webové technologie jako Leaflet, GeoJSON a mapové služby WMS/WFS.^800 Zajímám se také o dálkový průzkum Země, prostorovou analytiku, automatizaci geodatových workflow a využití computer vision v GIS, například při zpracování obrazových a video dat. Hledám příležitosti podílet se na projektech zaměřených na environmentální monitoring, prostorové analýzy a vývoj geoprostorových aplikací."
+        ],
+        loop: false,
+        typeSpeed: 12,
+        backSpeed: 0,
+        showCursor: true,
+        cursorChar: '|',
+        onComplete: function(self) {
+          self.cursor.style.display = 'none';
+        }
       });
     });
   </script>
