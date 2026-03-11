@@ -806,6 +806,12 @@
               <div class="col s6 m2">
                 <img alt="REST API" src="/assets/img/7955-rest-api.webp" width="80" height="80" loading="lazy" class="responsive-img" /><p>REST API</p>
               </div>
+              <div class="col s6 m2">
+                <img alt="WordPress" src="/assets/img/wordpress.webp" width="80" height="80" loading="lazy" class="responsive-img" /><p>WordPress</p>
+              </div>
+              <div class="col s6 m2">
+                <img alt="YOOtheme" src="/assets/img/yootheme.webp" width="80" height="80" loading="lazy" class="responsive-img" /><p>YOOtheme</p>
+              </div>
             </div>
           </div>
         </div>
@@ -1191,10 +1197,10 @@
 
       var typedAbout = new Typed('.typing-about', {
         strings: [
-          "Jsem student geoinformatiky a GIS analytik se zaměřením na prostorové analýzy, webovou kartografii a práci s geoprostorovými daty. Aktuálně studuji navazující magisterský program Geoinformatika a kartografie na Univerzitě Palackého v Olomouci. Zaměřuji se na propojení GIS technologií, prostorových databází a programování pro tvorbu nástrojů pro analýzu a vizualizaci geografických dat. Pracuji především s technologiemi QGIS, ArcGIS Pro, PostGIS a Python a vytvářím mapové aplikace a analytické nástroje využívající webové technologie jako Leaflet, GeoJSON a mapové služby WMS/WFS.^800 Zajímám se také o dálkový průzkum Země, prostorovou analytiku, automatizaci geodatových workflow a využití computer vision v GIS, například při zpracování obrazových a video dat. Hledám příležitosti podílet se na projektech zaměřených na environmentální monitoring, prostorové analýzy a vývoj geoprostorových aplikací."
+          "Jsem student geoinformatiky a GIS analytik se zaměřením na prostorové analýzy, webovou kartografii a práci s geoprostorovými daty. Aktuálně studuji navazující magisterský program Geoinformatika a kartografie na Univerzitě Palackého v Olomouci. Zaměřuji se na propojení GIS technologií, prostorových databází a programování pro tvorbu nástrojů pro analýzu a vizualizaci geografických dat. Pracuji především s technologiemi QGIS, ArcGIS Pro, PostGIS a Python a vytvářím mapové aplikace a analytické nástroje využívající webové technologie jako Leaflet, GeoJSON a mapové služby WMS/WFS.^500 Zajímám se také o dálkový průzkum Země, prostorovou analytiku, automatizaci geodatových workflow a využití computer vision v GIS, například při zpracování obrazových a video dat. Hledám příležitosti podílet se na projektech zaměřených na environmentální monitoring, prostorové analýzy a vývoj geoprostorových aplikací."
         ],
         loop: false,
-        typeSpeed: 12,
+        typeSpeed: 25,
         backSpeed: 0,
         showCursor: true,
         cursorChar: '|',
@@ -1202,6 +1208,14 @@
           self.cursor.style.display = 'none';
         }
       });
+
+      // Click to complete immediately
+      document.querySelector('.typing-about').addEventListener('click', function() {
+        typedAbout.destroy();
+        this.innerHTML = "Jsem student geoinformatiky a GIS analytik se zaměřením na prostorové analýzy, webovou kartografii a práci s geoprostorovými daty. Aktuálně studuji navazující magisterský program Geoinformatika a kartografie na Univerzitě Palackého v Olomouci. Zaměřuji se na propojení GIS technologií, prostorových databází a programování pro tvorbu nástrojů pro analýzu a vizualizaci geografických dat. Pracuji především s technologiemi QGIS, ArcGIS Pro, PostGIS a Python a vytvářím mapové aplikace a analytické nástroje využívající webové technologie jako Leaflet, GeoJSON a mapové služby WMS/WFS. Zajímám se také o dálkový průzkum Země, prostorovou analytiku, automatizaci geodatových workflow a využití computer vision v GIS, například při zpracování obrazových a video dat. Hledám příležitosti podílet se na projektech zaměřených na environmentální monitoring, prostorové analýzy a vývoj geoprostorových aplikací.";
+        this.style.cursor = 'default';
+      });
+      document.querySelector('.typing-about').style.cursor = 'pointer';
     });
   </script>
 
