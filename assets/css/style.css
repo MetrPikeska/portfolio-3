@@ -50,6 +50,14 @@
   overflow: hidden;
 }
 
+/* Hero h1 — matches Materialize h2 sizing to preserve design */
+#intro .intro-heading {
+  font-size: 3.56rem;
+  line-height: 110%;
+  margin: 0.82rem 0;
+  font-weight: 400;
+}
+
 /* Google Font loaded via <link> in HTML with font-display:swap (see index.html) */
 .social {
   margin: 0 auto;

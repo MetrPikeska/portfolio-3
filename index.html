@@ -19,7 +19,6 @@
   <title>Petr Mikeska – GIS Analytik &amp; Geoinformatik | petrmikeska.cz</title>
   <meta name="title" content="Petr Mikeska – GIS Analytik &amp; Geoinformatik | petrmikeska.cz" />
   <meta name="description" content="GIS analytik – student geoinformatiky UP Olomouc. Prostorové analýzy, webové GIS aplikace, Python, PostGIS, computer vision. Portfolio projektů a nabídka služeb." />
-  <meta name="keywords" content="geoinformatika, GIS analytik, webové mapové aplikace, PostGIS, prostorové analýzy, webová kartografie, Leaflet, Python GIS, QGIS, ArcGIS, computer vision, OpenCV, YOLOv8, dálkový průzkum, GeoServer, WMS, WFS, REST API, prostorove databáze, GIS služby, geospatial, spatial analysis, Olomouc" />
   <meta name="author" content="Petr Mikeska" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="geo.region" content="CZ-71" />
@@ -135,17 +134,17 @@
   <meta property="twitter:image" content="https://petrmikeska.cz/assets/img/passport.webp" />
 
   <!-- Preconnect for third-party origins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
   <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com" crossorigin />
-  <link rel="preconnect" href="https://ajax.googleapis.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
   <!-- Preload LCP hero image -->
   <link rel="preload" as="image" href="/assets/img/passport.webp" />
 
-  <!-- Google Font: non-blocking with font-display:swap -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet" />
+  <!-- Google Font: non-blocking preload -->
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet" /></noscript>
 
   <!-- Materialize - Compiled and minified CSS-->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
@@ -315,8 +314,7 @@
           <div class="col s12 m6">
             <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
               <div class="caption">
-                <h1 class="visually-hidden">Petr Mikeska - Geoinformatik a GIS Analytik</h1>
-                <h2><span class="teal">Petr Mikeska</span></h2>
+                <h1 class="intro-heading"><span class="teal">Petr Mikeska</span></h1>
                 <h5 style="color:#fff"><span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
                 <h5 style="color: #fff; font-weight: 300; line-height: 1.6;">Geoinformatik | Prostorové analýzy | Programování | Prostorové databáze | Computer Vision</h5>
               </div>
@@ -351,7 +349,10 @@
     <section id="about" class="section scrollspy">
       <h3 class="page-title white-text teal">O mně</h3>
       <div class="container flow-text">
-        <span class="typing-about"></span>
+        <p>Jsem geoinformatik a student navazujícího magisterského programu Geoinformatika a kartografie na Univerzitě Palackého v Olomouci. Zabývám se analýzou a zpracováním prostorových dat, tvorbou mapových aplikací a vývojem nástrojů pro práci s geografickými informacemi.</p>
+        <p>Ve své práci propojuji GIS technologie, prostorové databáze a programování. Pracuji především s nástroji jako QGIS, ArcGIS Pro, PostGIS a Python a vytvářím webové mapové aplikace využívající technologie jako Leaflet a OpenLayers. Zkušenosti mám také s webovými technologiemi jako HTML, CSS, JavaScript a WordPress.</p>
+        <p>Zajímá mě také dálkový průzkum Země, automatizace práce s geodaty a využití počítačového vidění při analýze obrazových a video dat. Ve volném čase se věnuji také experimentování s technologiemi – například práci na vlastním serveru, kde testují různé nástroje, služby a datové workflow.</p>
+        <p>Vedle technologií mám rád hory a sport. Pocházím z Beskyd, kde jsem vyrůstal v prostředí horského střediska, a v zimě působím jako instruktor snowboardingu. Ve volném čase se věnuji boxu, turistice, hudbě a DJingu – zejména žánrům rap a drum &amp; bass. Rád také cestuji a poznávám nová místa; navštívil jsem například Finsko, Švédsko, Španělsko, Kazachstán, Německo a další země Evropy.</p>
       </div>
     </section>
 
@@ -1184,59 +1185,10 @@
     </div>
   </footer>
 
-  <!-- typed.js -->
+  <!-- App scripts: typed.js hero animation + vanilla scrollspy/sidenav -->
   <script defer src="assets/vendor/typed.js/typed.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var typed = new Typed('.typing', {
-        strings: ["Prostorové analýzy", "Programování", "Prostorové databáze", "Computer Vision"],
-        loop: true,
-        typeSpeed: 80,
-        backSpeed: 40
-      });
-
-      var typedAbout = new Typed('.typing-about', {
-        strings: [
-          "Jsem geoinformatik a student navazuj\u00edc\u00edho magistersk\u00e9ho programu Geoinformatika a kartografie na Univerzit\u011b Palack\u00e9ho v Olomouci. Zab\u00fdv\u00e1m se anal\u00fdzou a zpracov\u00e1n\u00edm prostorov\u00fdch dat, tvorbou mapov\u00fdch aplikac\u00ed a v\u00fdvojem n\u00e1stroj\u016f pro pr\u00e1ci s geografick\u00fdmi informacemi.^500 Ve sv\u00e9 pr\u00e1ci propojuji GIS technologie, prostorov\u00e9 datab\u00e1ze a programov\u00e1n\u00ed. Pracuji p\u0159edev\u0161\u00edm s n\u00e1stroji jako QGIS, ArcGIS Pro, PostGIS a Python a vytv\u00e1\u0159\u00edm webov\u00e9 mapov\u00e9 aplikace vyu\u017e\u00edvaj\u00edc\u00ed technologie jako Leaflet a OpenLayers. Zku\u0161enosti m\u00e1m tak\u00e9 s webov\u00fdmi technologiemi jako HTML, CSS, JavaScript a WordPress.^500 Zaj\u00edm\u00e1 m\u011b tak\u00e9 d\u00e1lkov\u00fd pr\u016fzkum Zem\u011b, automatizace pr\u00e1ce s geodaty a vyu\u017eit\u00ed po\u010d\u00edta\u010dov\u00e9ho vid\u011bn\u00ed p\u0159i anal\u00fdze obrazov\u00fdch a video dat. Ve voln\u00e9m \u010dase se v\u011bnuji tak\u00e9 experimentov\u00e1n\u00ed s technologiemi \u2013 nap\u0159\u00edklad pr\u00e1ci na vlastn\u00edm serveru, kde testuj\u00ed r\u016fzn\u00e9 n\u00e1stroje, slu\u017eby a datov\u00e9 workflow.^500 Vedle technologi\u00ed m\u00e1m r\u00e1d hory a sport. Poch\u00e1z\u00edm z Beskyd, kde jsem vyr\u016fstal v prost\u0159ed\u00ed horsk\u00e9ho st\u0159ediska, a v zim\u011b p\u016fsob\u00edm jako instruktor snowboardingu. Ve voln\u00e9m \u010dase se v\u011bnuji boxu, turistice, hudb\u011b a DJingu \u2013 zejm\u00e9na \u017e\u00e1nr\u016fm rap a drum &amp; bass. R\u00e1d tak\u00e9 cestuj\u00ed a pozn\u00e1v\u00e1m nov\u00e1 m\u00edsta; nav\u0161t\u00edvil jsem nap\u0159\u00edklad Finsko, \u0160v\u00e9dsko, \u0160pan\u011blsko, Kazachst\u00e1n, N\u011bmecko a dal\u0161\u00ed zem\u011b Evropy."
-        ],
-        loop: false,
-        typeSpeed: 25,
-        backSpeed: 0,
-        showCursor: true,
-        cursorChar: '|',
-        onComplete: function(self) {
-          self.cursor.style.display = 'none';
-        }
-      });
-
-      // Click to complete immediately
-      document.querySelector('.typing-about').addEventListener('click', function() {
-        typedAbout.destroy();
-        this.innerHTML = "Jsem geoinformatik a student navazuj\u00edc\u00edho magistersk\u00e9ho programu Geoinformatika a kartografie na Univerzit\u011b Palack\u00e9ho v Olomouci. Zab\u00fdv\u00e1m se anal\u00fdzou a zpracov\u00e1n\u00edm prostorov\u00fdch dat, tvorbou mapov\u00fdch aplikac\u00ed a v\u00fdvojem n\u00e1stroj\u016f pro pr\u00e1ci s geografick\u00fdmi informacemi.<br><br>Ve sv\u00e9 pr\u00e1ci propojuji GIS technologie, prostorov\u00e9 datab\u00e1ze a programov\u00e1n\u00ed. Pracuji p\u0159edev\u0161\u00edm s n\u00e1stroji jako QGIS, ArcGIS Pro, PostGIS a Python a vytv\u00e1\u0159\u00edm webov\u00e9 mapov\u00e9 aplikace vyu\u017e\u00edvaj\u00edc\u00ed technologie jako Leaflet a OpenLayers. Zku\u0161enosti m\u00e1m tak\u00e9 s webov\u00fdmi technologiemi jako HTML, CSS, JavaScript a WordPress.<br><br>Zaj\u00edm\u00e1 m\u011b tak\u00e9 d\u00e1lkov\u00fd pr\u016fzkum Zem\u011b, automatizace pr\u00e1ce s geodaty a vyu\u017eit\u00ed po\u010d\u00edta\u010dov\u00e9ho vid\u011bn\u00ed p\u0159i anal\u00fdze obrazov\u00fdch a video dat. Ve voln\u00e9m \u010dase se v\u011bnuji tak\u00e9 experimentov\u00e1n\u00ed s technologiemi \u2013 nap\u0159\u00edklad pr\u00e1ci na vlastn\u00edm serveru, kde testuj\u00ed r\u016fzn\u00e9 n\u00e1stroje, slu\u017eby a datov\u00e9 workflow.<br><br>Vedle technologi\u00ed m\u00e1m r\u00e1d hory a sport. Poch\u00e1z\u00edm z Beskyd, kde jsem vyr\u016fstal v prost\u0159ed\u00ed horsk\u00e9ho st\u0159ediska, a v zim\u011b p\u016fsob\u00edm jako instruktor snowboardingu. Ve voln\u00e9m \u010dase se v\u011bnuji boxu, turistice, hudb\u011b a DJingu \u2013 zejm\u00e9na \u017e\u00e1nr\u016fm rap a drum &amp; bass. R\u00e1d tak\u00e9 cestuj\u00ed a pozn\u00e1v\u00e1m nov\u00e1 m\u00edsta; nav\u0161t\u00edvil jsem nap\u0159\u00edklad Finsko, \u0160v\u00e9dsko, \u0160pan\u011blsko, Kazachst\u00e1n, N\u011bmecko a dal\u0161\u00ed zem\u011b Evropy.";
-        this.style.cursor = 'default';
-      });
-      document.querySelector('.typing-about').style.cursor = 'pointer';
-    });
-  </script>
-
-
-  <!-- jQuery-->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    document.addEventListener('DOMContentLoaded', function() {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-  </script>
+  <script defer src="assets/js/main.js"></script>
+  
 </body>
 
 </html>
