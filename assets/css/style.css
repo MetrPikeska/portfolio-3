@@ -860,6 +860,8 @@ small {
   .contact-grid {
     grid-template-columns: 1fr;
     margin-left: 0;
+    padding-bottom: 20px;
+    gap: 20px;
   }
 }
 
