@@ -1016,3 +1016,14 @@ small {
   letter-spacing: 0.2px;
   opacity: 0.9;
 }
+
+/* Shift billing info right in footer to avoid sidebar overlap */
+.page-footer .row {
+  margin-left: 40px !important;
+}
+
+@media (max-width: 768px) {
+  .page-footer .row {
+    margin-left: 0 !important;
+  }
+}
