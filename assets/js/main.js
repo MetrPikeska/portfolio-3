@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Hero typing animation
   new Typed('.typing', {
-    strings: ['Prostorové analýzy', 'Programování', 'Prostorové databáze', 'Computer Vision'],
+    strings: ['Web GIS Developer', 'Spatial Data Engineer', 'Computer Vision', 'PostGIS & Remote Sensing'],
     loop: true,
     typeSpeed: 80,
     backSpeed: 40,
