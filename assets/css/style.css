@@ -990,7 +990,8 @@ small {
 
 /* Footer styling improvements */
 .page-footer {
-  padding-top: 30px !important;
+  padding-top: 60px !important;
+  padding-bottom: 0 !important;
 }
 
 .page-footer h6 {
