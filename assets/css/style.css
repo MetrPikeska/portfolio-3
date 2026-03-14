@@ -853,11 +853,13 @@ small {
   gap: 40px;
   align-items: start;
   padding: 20px 0 40px;
+  margin-left: 40px;
 }
 
 @media (max-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr;
+    margin-left: 0;
   }
 }
 
@@ -924,7 +926,7 @@ small {
 }
 
 .contact-info-card {
-  background: #f5f5f5;
+  background: #00897B;
   border-radius: 6px;
   padding: 28px 28px 24px;
 }
@@ -933,14 +935,14 @@ small {
   font-size: 16px;
   font-style: italic;
   font-weight: 600;
-  color: #333;
+  color: #fff;
   margin: 0 0 8px;
 }
 
 .contact-info-sub {
   font-size: 13px;
   font-style: italic;
-  color: #666;
+  color: #e0f2f1;
   margin: 0 0 20px;
 }
 
@@ -959,29 +961,29 @@ small {
   gap: 14px;
   font-size: 14px;
   font-style: italic;
-  color: #444;
+  color: #fff;
 }
 
 .contact-info-icon {
   width: 36px;
   height: 36px;
-  border: 1px solid #ddd;
+  border: 1px solid #00695c;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.1);
   flex-shrink: 0;
-  color: #555;
+  color: #fff;
   font-size: 15px;
 }
 
 .contact-info-list a {
-  color: #444;
+  color: #fff;
   text-decoration: none;
   font-style: italic;
 }
 
 .contact-info-list a:hover {
-  color: #009688;
+  color: #e0f2f1;
 }
